@@ -59,6 +59,7 @@ class Program
         using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
         {
             records = csv.GetRecords<Track>().ToList();
+            records = null;
         }
         return records;
 
