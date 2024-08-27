@@ -60,6 +60,8 @@ class Program
         {
             records = csv.GetRecords<Track>().ToList();
             records = null;
+            records = csv.GetRecords<Track>().ToList();
+
         }
         return records;
 
